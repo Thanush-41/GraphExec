@@ -4,7 +4,6 @@ A minimal FastAPI-based agent workflow engine. Define graphs of nodes, maintain 
 
 ![Python](https://img.shields.io/badge/Python-3.11+-blue)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.115-green)
-![License](https://img.shields.io/badge/License-MIT-yellow)
 
 ## ✨ Features
 

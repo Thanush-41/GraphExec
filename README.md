@@ -256,10 +256,5 @@ engine.tools.register("async_tool", async_tool)
 - **Retry Policies**: Configurable retry on tool failures
 - **Metrics & Monitoring**: Prometheus endpoints for observability
 
-## 📝 License
-
-MIT
-
----
 
 Built as part of an AI Engineering Internship assignment. Focus areas: clean Python, async programming, API design, and state-based workflow execution.

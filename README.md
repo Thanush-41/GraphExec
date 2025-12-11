@@ -5,7 +5,7 @@ A minimal FastAPI-based agent workflow engine. Define graphs of nodes, maintain 
 ![Python](https://img.shields.io/badge/Python-3.11+-blue)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.115-green)
 
-## ✨ Features
+##  Features
 
 ### Core Engine
 - **Node Types**: Tool, Conditional, and Loop nodes with shared state updates
@@ -28,7 +28,7 @@ Implements **Option A** from the assignment:
 4. **Suggest improvements** - Generate actionable suggestions
 5. **Loop until quality_score >= 0.8** - Refine iteratively
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 app/
@@ -49,7 +49,7 @@ app/
     └── index.html          # Web interface
 ```
 
-## 🚀 Quickstart
+##  Quickstart
 
 ### Prerequisites
 - Python 3.11+
@@ -80,7 +80,7 @@ uvicorn app.main:app --reload
 - **API Documentation**: http://localhost:8000/docs
 - **Health Check**: http://localhost:8000/health
 
-## 📡 API Reference
+##  API Reference
 
 ### Graph Management
 
@@ -104,7 +104,7 @@ uvicorn app.main:app --reload
 | `/ws/run` | Start workflow and stream logs |
 | `/ws/run/{run_id}` | Subscribe to existing run logs |
 
-## 💻 Usage Examples
+##  Usage Examples
 
 ### Run via REST API
 
@@ -155,7 +155,7 @@ curl -X POST http://localhost:8000/graph/create \
   }'
 ```
 
-## 🔧 Engine Architecture
+##  Engine Architecture
 
 ### Node Types
 
@@ -221,7 +221,7 @@ async def async_tool(state: dict) -> dict:
 engine.tools.register("async_tool", async_tool)
 ```
 
-## 📊 Sample Workflow Output
+##  Sample Workflow Output
 
 ```json
 {
@@ -244,7 +244,7 @@ engine.tools.register("async_tool", async_tool)
 }
 ```
 
-## 🔮 Improvements With More Time
+##  Improvements With More Time
 
 - **Persistent Storage**: SQLite/PostgreSQL for graphs and run history
 - **Parallel Execution**: Run independent branches concurrently
